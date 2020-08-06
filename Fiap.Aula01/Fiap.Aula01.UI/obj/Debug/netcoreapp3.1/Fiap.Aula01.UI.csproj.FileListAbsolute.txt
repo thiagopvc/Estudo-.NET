@@ -1,0 +1,13 @@
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\bin\Debug\netcoreapp3.1\Fiap.Aula01.UI.exe
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\bin\Debug\netcoreapp3.1\Fiap.Aula01.UI.deps.json
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\bin\Debug\netcoreapp3.1\Fiap.Aula01.UI.runtimeconfig.json
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\bin\Debug\netcoreapp3.1\Fiap.Aula01.UI.runtimeconfig.dev.json
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\bin\Debug\netcoreapp3.1\Fiap.Aula01.UI.dll
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\bin\Debug\netcoreapp3.1\Fiap.Aula01.UI.pdb
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\obj\Debug\netcoreapp3.1\Fiap.Aula01.UI.csprojAssemblyReference.cache
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\obj\Debug\netcoreapp3.1\Fiap.Aula01.UI.AssemblyInfoInputs.cache
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\obj\Debug\netcoreapp3.1\Fiap.Aula01.UI.AssemblyInfo.cs
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\obj\Debug\netcoreapp3.1\Fiap.Aula01.UI.csproj.CoreCompileInputs.cache
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\obj\Debug\netcoreapp3.1\Fiap.Aula01.UI.dll
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\obj\Debug\netcoreapp3.1\Fiap.Aula01.UI.pdb
+E:\.net\Fiap.Aula01\Fiap.Aula01.UI\obj\Debug\netcoreapp3.1\Fiap.Aula01.UI.genruntimeconfig.cache
