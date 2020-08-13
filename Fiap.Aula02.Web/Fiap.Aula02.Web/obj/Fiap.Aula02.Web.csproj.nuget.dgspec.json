@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\.net\\Fiap.Aula01\\Fiap.Aula01.UI\\Fiap.Aula01.UI.csproj": {}
+    "E:\\.net\\Fiap.Aula02.Web\\Fiap.Aula02.Web\\Fiap.Aula02.Web.csproj": {}
   },
   "projects": {
-    "E:\\.net\\Fiap.Aula01\\Fiap.Aula01.UI\\Fiap.Aula01.UI.csproj": {
+    "E:\\.net\\Fiap.Aula02.Web\\Fiap.Aula02.Web\\Fiap.Aula02.Web.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\.net\\Fiap.Aula01\\Fiap.Aula01.UI\\Fiap.Aula01.UI.csproj",
-        "projectName": "Fiap.Aula01.UI",
-        "projectPath": "E:\\.net\\Fiap.Aula01\\Fiap.Aula01.UI\\Fiap.Aula01.UI.csproj",
+        "projectUniqueName": "E:\\.net\\Fiap.Aula02.Web\\Fiap.Aula02.Web\\Fiap.Aula02.Web.csproj",
+        "projectName": "Fiap.Aula02.Web",
+        "projectPath": "E:\\.net\\Fiap.Aula02.Web\\Fiap.Aula02.Web\\Fiap.Aula02.Web.csproj",
         "packagesPath": "C:\\Users\\bilud\\.nuget\\packages\\",
-        "outputPath": "E:\\.net\\Fiap.Aula01\\Fiap.Aula01.UI\\obj\\",
+        "outputPath": "E:\\.net\\Fiap.Aula02.Web\\Fiap.Aula02.Web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\bilud\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -48,6 +48,9 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
