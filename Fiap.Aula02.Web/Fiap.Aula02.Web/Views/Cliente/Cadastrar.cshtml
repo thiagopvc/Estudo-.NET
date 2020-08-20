@@ -1,5 +1,13 @@
 ﻿<h1>registro de clientes</h1>
 
+@if (Model != null)
+{
+    <div class="alert alert-success">
+        @Model.Nome @Model.Sobrenome, Idade - @Model.Idade
+    </div>
+}
+
+
 @if (ViewBag.customer != null)
 {
 <p>@ViewData["nome"]</p>

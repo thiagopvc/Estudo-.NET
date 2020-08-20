@@ -31,9 +31,9 @@ namespace Fiap.Aula02.Web.Controllers
 
             //Mantem a informacao apos um redirect
             TempData["msg"] = "Cliente cadastrado";
-            
+
             //Redirect
-            return RedirectToAction("Cadastrar");
+            return View(cliente); 
         }
     }
 }
