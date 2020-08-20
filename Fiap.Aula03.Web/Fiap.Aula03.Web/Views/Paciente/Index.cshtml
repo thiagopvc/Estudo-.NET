@@ -1,0 +1,38 @@
+﻿@model List<Paciente>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<!--HTML Helper-->
+@Html.ActionLink("Vai pra home", "Index", "Home")
+
+<!--Tag Helper-->
+<a asp-action="cadastrar" asp-controller="paciente">Cadastrar</a>
+
+<table class="table">
+    <tr>
+        <th>Codigo</th>
+        <th>Nome</th>
+        <th>Data Entrada</th>
+        <th>Temperatura Atual</th>
+        <th>Covid</th>
+        <th></th>
+    </tr>
+    @foreach(var paciente in Model)
+    {
+        <tr>
+            <td>@paciente.Codigo</td>
+            <td>@paciente.Nome</td>
+            <td>@paciente.DataEntrada</td>
+            <td>@paciente.Temperatura</td>
+            <td>@paciente.Covid</td>
+            <td>
+                <a asp-action="editar" asp-route-id="@paciente.Codigo">Editar</a>
+            </td>
+        </tr>
+    }
+</table>
+

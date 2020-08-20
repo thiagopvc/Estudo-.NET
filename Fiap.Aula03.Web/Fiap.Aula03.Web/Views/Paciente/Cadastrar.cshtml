@@ -1,0 +1,35 @@
+﻿@model Paciente
+
+@{
+    ViewData["Title"] = "Cadastrar";
+}
+
+<h1>Cadastrar</h1>
+<a asp-action="index">Lista de Pacientes</a>
+
+@if (TempData["msg"] != null)
+{
+    <div class="alert alert-success">@TempData["msg"]</div>
+}
+
+
+<form asp-action="cadastrar" asp-controller="paciente">
+    <div class="form-group">
+        <label asp-for="Nome"></label>
+        <input asp-for="Nome" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="DataEntrada"></label>
+        <input asp-for="DataEntrada" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label asp-for="Temperatura"></label>
+        <input asp-for="Temperatura" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <input asp-for="Covid"/>
+        <label asp-for="Covid"></label>
+    </div>
+    <input type="submit" value="Cadastrar" class="btn btn-outline-primary"/>
+    <a asp-action="index" class="btn btn-outline-dark">Cancelar</a>
+</form>
