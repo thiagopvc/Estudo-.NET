@@ -1,0 +1,45 @@
+﻿@model List<Campeoes>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<a asp-action="cadastrar" asp-controller="campeoes">Cadastrar</a>
+
+<form asp-controller="campeoes" asp-action="index" method="get">
+    <p>
+        Preco: <input type="text" name="Procurar"/>
+        <input type="submit" value="procurar"/>
+    </p>
+</form>
+
+<table class="table">
+    <tr>
+        <th>Nome</th>
+        <th>Data Lancamento</th>
+        <th>Rotas</th>
+        <th>Preco</th>
+        <th>Rework</th>
+        <th></th>
+        <th></th>
+    </tr>
+    @foreach(var campeoes in Model)
+    {
+        <tr>
+            <td>@campeoes.Nome</td>
+            <td>@campeoes.DataLancamento</td>
+            <td>@campeoes.Rotas</td>
+            <td>@campeoes.Preco</td>
+            <td>@campeoes.Rework</td>
+            <td>
+                <a asp-action="editar" asp-route-id="@campeoes.Codigo">Editar</a>
+            </td>
+            <td>
+                <a asp-action="deletar" asp-route-id="@campeoes.Codigo">Deletar</a>
+            </td>
+        </tr>
+    }
+</table>
+
