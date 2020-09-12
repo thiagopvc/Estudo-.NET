@@ -60,9 +60,7 @@ namespace Fiap.NAC1.Web.Controllers
         [HttpPost]
         public IActionResult Editar(Campeoes campeoes)
         {
-            var camp = _banco.Find(c=>c.Codigo == campeoes.Codigo);
-            _banco.Remove(camp);
-            _banco.Add(campeoes);
+            _banco[_banco.FindIndex(c => c.Codigo == campeoes.Codigo)] = campeoes;
             return RedirectToAction("Index");
         }
 
