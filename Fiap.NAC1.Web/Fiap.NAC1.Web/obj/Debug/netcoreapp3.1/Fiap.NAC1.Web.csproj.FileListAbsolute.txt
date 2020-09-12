@@ -111,4 +111,3 @@ E:\.net\Fiap.NAC1.Web\Fiap.NAC1.Web\obj\Debug\netcoreapp3.1\Fiap.NAC1.Web.genrun
 E:\.net\Fiap.NAC1.Web\Fiap.NAC1.Web\obj\Debug\netcoreapp3.1\Razor\Views\Campeoes\Cadastrar.cshtml.g.cs
 E:\.net\Fiap.NAC1.Web\Fiap.NAC1.Web\obj\Debug\netcoreapp3.1\Razor\Views\Campeoes\Index.cshtml.g.cs
 E:\.net\Fiap.NAC1.Web\Fiap.NAC1.Web\obj\Debug\netcoreapp3.1\Razor\Views\Campeoes\Editar.cshtml.g.cs
-E:\.net\Fiap.NAC1.Web\Fiap.NAC1.Web\obj\Debug\netcoreapp3.1\Razor\Views\Campeoes\Deletar.cshtml.g.cs

@@ -11,21 +11,27 @@ namespace Fiap.NAC1.Web.Controllers
     {
         private static List<Campeoes> _banco = new List<Campeoes>();
 
-        public IActionResult Index(string preco)
+        public IActionResult Index(string? nome)
         {
-            if (!String.IsNullOrEmpty(preco))
+            if (!String.IsNullOrEmpty(nome))
             {
-                var camp = new List<Campeoes>();
-                foreach(var campeao in _banco)
+                var lista = new List<Campeoes>();
+                foreach(var c in _banco)
                 {
-                    if(campeao.Preco <= float.Parse(preco))
+                    if(c.Preco <= int.Parse(nome))
                     {
-                        camp.Add(campeao);
+                        lista.Add(c);
                     }
                 }
-                return View(camp);
+                
+                return View(lista);
             }
-            return View(_banco); 
+            else
+            {
+                return View(_banco);
+
+            }
+
         }
 
         [HttpPost]
@@ -36,6 +42,7 @@ namespace Fiap.NAC1.Web.Controllers
             TempData["msg"] = "Campeao cadastrado";
             return RedirectToAction("Cadastrar");
         }
+
 
         [HttpGet]
         public IActionResult Cadastrar()
@@ -62,10 +69,8 @@ namespace Fiap.NAC1.Web.Controllers
         [HttpPost]
         public IActionResult Deletar(int id)
         {
-            var camp = _banco.Find(c => c.Codigo == id);
-            _banco.Remove(camp);
-            TempData["msg"] = "Deletado";
-            return View();
+            _banco.RemoveAt(_banco.FindIndex(c => c.Codigo == id));
+            return RedirectToAction("Index");
         }
     }
 }
